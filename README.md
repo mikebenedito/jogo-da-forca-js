@@ -13,5 +13,5 @@ ATUALIZAÇÕES:
 
 As melhorias são:
 - Mostrar na tela o número de letras da palavra a se descobrir;
-- ~ Resetar o jogo quando ele termina ~ (implementei 17/09/26);
+- Resetar o jogo quando ele termina (implementei 17/09/26);
 - Escrever a palavra interia de uma vez, caso já saiba a resposta.
