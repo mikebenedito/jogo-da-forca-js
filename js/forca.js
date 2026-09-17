@@ -1,5 +1,5 @@
 // 1 numero de letras
-// 2 resetar o jogo quando ele termina
+// 2 resetar o jogo quando ele termina FEITO
 // 3 mostrar a letra que foi errada
 // 4 escrever a palavra interia
 
@@ -159,7 +159,7 @@ function comparaListas(letra){
         }
 }
     else{
-        mudarStyleLetra("tecla-" + letra, true);
+        mudarStyleLetra("tecla-" + letra, true)
         for(i = 0; i < palavraSecretaSorteada.length; i ++){
             if(palavraSecretaSorteada[i] == letra){
                 listaDinamica[i] = letra;
@@ -178,6 +178,7 @@ function comparaListas(letra){
         abreModal("Parabéns!", "Você venceu!");
         tentativas = 0;
     }
+
 }
 
 
@@ -218,6 +219,7 @@ function abreModal(titulo, mensagem){
     $("#myModel").modal({
         show: true
     });
+
 }
 
 
@@ -226,3 +228,9 @@ bntReiniciar.addEventListener("click", function(){
     location.reload();
 });
 
+
+let reiniciarTudo = document.querySelector("#btnOk");
+reiniciarTudo.addEventListener("click", function(){
+    location.reload();
+});
+        
