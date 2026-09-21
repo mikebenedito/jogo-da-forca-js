@@ -5,6 +5,7 @@ let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 
 
+
 const palavras = [
 
     {
@@ -284,8 +285,8 @@ function criarPalavraSecreta(){
     let numeroLetras = palavraSecretaSorteada.length;
     palavraSecretaCategoria = palavras[indexPalavra].categoria + " com " + numeroLetras + " letras";
 
-    // console.log(palavraSecretaSorteada);
-    // console.log(palavraSecretaCategoria);
+    console.log(palavraSecretaSorteada);
+    console.log(palavraSecretaCategoria);
 };
 
 montarPalavraNaTela();
@@ -343,7 +344,7 @@ function mudarStyleLetra(tecla, condicao){
         document.getElementById(tecla).style.background = "#008000";
         document.getElementById(tecla).style.color = "#ffffff";
     }
-}
+};
 
 function comparaListas(letra){
     const pos = palavraSecretaSorteada.indexOf(letra);
@@ -375,7 +376,44 @@ function comparaListas(letra){
         tentativas = 0;
     }
 
-}
+};
+
+// let resposta = document.querySelector("#respostaPalavra");
+
+// enviar.addEventListener("submit", function(){
+//     console.log(resposta);
+// });
+
+// function comparaResposta(resposta){
+//     if(resposta != palavraSecretaSorteada){
+//         tentativas--;
+//         carregaImagemForca();
+//         if(tentativas == 0){
+//             abreModal("OPS!", "Não foi dessa vez... A palavra secreta era <br>" + palavraSecretaSorteada);
+//         }
+//     }
+//     else{
+//         mudarStyleLetra("tecla-" + letra, true)
+//         for(i = 0; i < palavraSecretaSorteada.length; i ++){
+//             if(palavraSecretaSorteada[i] == letra){
+//                 listaDinamica[i] = letra;
+//             }
+//         }
+//     }
+
+//     let vitoria = true;
+//     for(i = 0; i < palavraSecretaSorteada.length; i ++){
+//         if(palavraSecretaSorteada[i] != listaDinamica[i]){
+//             vitoria = false;
+//         }
+//     }
+
+//     if(vitoria == true){
+//         abreModal("Parabéns!", "Você venceu!");
+//         tentativas = 0;
+//     }
+
+// };
 
 
 function carregaImagemForca(){
@@ -402,7 +440,7 @@ function carregaImagemForca(){
             document.getElementById("imagem").style.background = "url('../img/forca.png')";
             break;           
         }
-}
+};
 
 
 function abreModal(titulo, mensagem){
@@ -416,7 +454,7 @@ function abreModal(titulo, mensagem){
         show: true
     });
 
-}
+};
 
 
 let bntReiniciar = document.querySelector("#btnReiniciar");
