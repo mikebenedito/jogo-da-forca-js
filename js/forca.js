@@ -9,27 +9,27 @@ const palavras = [
 
     {
         nome: "IRLANDA",
-        categoria: "PAIS"
+        categoria: "PAÍS"
     },
 
     {
         nome: "EQUADOR",
-        categoria: "PAIS"
+        categoria: "PAÍS"
     },
 
     {
         nome: "CHINA",
-        categoria: "PAIS"
+        categoria: "PAÍS"
     },
 
     {
         nome: "ARGENTINA",
-        categoria: "PAIS"
+        categoria: "PAÍS"
     },
 
     {
         nome: "JAPAO",
-        categoria: "PAIS"
+        categoria: "PAÍS"
     },
 
     {
@@ -134,52 +134,52 @@ const palavras = [
 
     {
         nome: "NEYMAR",
-        categoria: "CRAQUE"
+        categoria: "ATLETA"
     },
 
     {
         nome: "MESSI",
-        categoria: "CRAQUE"
+        categoria: "ATLETA"
     },
 
     {
         nome: "CRISTIANO RONALDO",
-        categoria: "CRAQUE"
+        categoria: "ATLETA"
     },
 
     {
         nome: "PELE",
-        categoria: "CRAQUE"
+        categoria: "ATLETA"
     },
 
     {
         nome: "RONALDINHO",
-        categoria: "CRAQUE"
+        categoria: "ATLETA"
     },
 
     {
         nome: "SUPERMAN",
-        categoria: "HEROI"
+        categoria: "HERÓI"
     },
 
     {
         nome: "BATMAN",
-        categoria: "HEROI"
+        categoria: "HERÓI"
     },
 
     {
         nome: "HOMEM ARANHA",
-        categoria: "HEROI"
+        categoria: "HERÓI"
     },
 
     {
         nome: "HOMEM DE FERRO",
-        categoria: "HEROI"
+        categoria: "HERÓI"
     },
 
     {
         nome: "LULA",
-        categoria: "HEROI"
+        categoria: "HERÓI"
     },
 
     {
@@ -260,6 +260,16 @@ const palavras = [
     {
         nome: "FAZ O L",
         categoria: "FRASE MARCANTE"
+    },
+
+    {
+        nome: "NETO",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "CONFORTAVEL",
+        categoria: "CAMISETA"
     }
 
 ];
@@ -269,12 +279,13 @@ criarPalavraSecreta();
 
 function criarPalavraSecreta(){
     const indexPalavra = parseInt(Math.random() * palavras.length);
-    
+        
     palavraSecretaSorteada = palavras[indexPalavra].nome;
-    palavraSecretaCategoria = palavras[indexPalavra].categoria;
+    let numeroLetras = palavraSecretaSorteada.length;
+    palavraSecretaCategoria = palavras[indexPalavra].categoria + " com " + numeroLetras + " letras";
 
-    console.log(palavraSecretaSorteada);
-    console.log(palavraSecretaCategoria);
+    // console.log(palavraSecretaSorteada);
+    // console.log(palavraSecretaCategoria);
 };
 
 montarPalavraNaTela();

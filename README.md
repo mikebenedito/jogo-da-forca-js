@@ -12,6 +12,6 @@ ATUALIZAÇÕES:
 17/09/2026: Segui o passo a passo até o video 14, após isso me desafiei a fazer as coisas sozinho. Meu amigo Luan Vieira testou o jogo e me indicou melhorias a se fazer, e eu aceitei o desafio.
 
 As melhorias são:
-- Mostrar na tela o número de letras da palavra a se descobrir;
+- Mostrar na tela o número de letras da palavra a se descobrir; (implementei 21/09/26);
 - Resetar o jogo quando ele termina (implementei 17/09/26);
 - Escrever a palavra interia de uma vez, caso já saiba a resposta.
