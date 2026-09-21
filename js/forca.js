@@ -1,84 +1,269 @@
-// 1 numero de letras
-// 2 resetar o jogo quando ele termina FEITO
-// 3 mostrar a letra que foi errada
-// 4 escrever a palavra interia
-
 
 let tentativas = 6;
 let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 
+
 const palavras = [
-    palavra001 ={
+
+    {
         nome: "IRLANDA",
         categoria: "PAIS"
     },
-    palavra002 ={
+
+    {
         nome: "EQUADOR",
         categoria: "PAIS"
     },
-    palavra003 ={
+
+    {
         nome: "CHINA",
         categoria: "PAIS"
     },
-    palavra004 ={
+
+    {
+        nome: "ARGENTINA",
+        categoria: "PAIS"
+    },
+
+    {
+        nome: "JAPAO",
+        categoria: "PAIS"
+    },
+
+    {
         nome: "HIPOPOTAMO",
         categoria: "ANIMAL"
     },
-    palavra005 ={
+
+    {
         nome: "LAGARTIXA",
         categoria: "ANIMAL"
     },
-    palavra006 ={
+
+    {
         nome: "CANGURU",
         categoria: "ANIMAL"
     },
-    palavra007 ={
+
+    {
+        nome: "ELEFANTE",
+        categoria: "ANIMAL"
+    },
+
+    {
+        nome: "TUBARAO",
+        categoria: "ANIMAL"
+    },
+
+    {
         nome: "BASQUETEBOL",
         categoria: "ESPORTE"
     },
-    palavra008 ={
+
+    {
         nome: "CICLISMO",
         categoria: "ESPORTE"
     },
-    palavra009 ={
+
+    {
         nome: "BADMINTON",
         categoria: "ESPORTE"
     },
-    palavra010 ={
+
+    {
+        nome: "SURFE",
+        categoria: "ESPORTE"
+    },
+
+    {
+        nome: "BOXE",
+        categoria: "ESPORTE"
+    },
+
+    {
         nome: "CERVEJA",
         categoria: "BEBIDA"
     },
-    palavra011 ={
-        nome: "CONFORTAVEL",
-        categoria: "CAMISETA"
+
+    {
+        nome: "CAFE",
+        categoria: "BEBIDA"
     },
-    palavra012 ={
-        nome: "NETO",
-        categoria: "CRAQUE"
+
+    {
+        nome: "SUCO",
+        categoria: "BEBIDA"
     },
-    palavra013 ={
-        nome: "LULA",
-        categoria: "HEROI"
+
+    {
+        nome: "CHOCOLATE QUENTE",
+        categoria: "BEBIDA"
     },
-    palavra014 ={
+
+    {
+        nome: "LIMONADA",
+        categoria: "BEBIDA"
+    },
+
+    {
         nome: "THE BEATLES",
         categoria: "BANDA"
     },
-    palavra015 ={
+
+    {
         nome: "CHARLIE BROWN JR",
         categoria: "BANDA"
     },
-    palavra016 ={
+
+    {
         nome: "LINKIN PARK",
         categoria: "BANDA"
     },
-    palavra017 ={
+
+    {
+        nome: "QUEEN",
+        categoria: "BANDA"
+    },
+
+    {
+        nome: "NIRVANA",
+        categoria: "BANDA"
+    },
+
+    {
+        nome: "NEYMAR",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "MESSI",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "CRISTIANO RONALDO",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "PELE",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "RONALDINHO",
+        categoria: "CRAQUE"
+    },
+
+    {
+        nome: "SUPERMAN",
+        categoria: "HEROI"
+    },
+
+    {
+        nome: "BATMAN",
+        categoria: "HEROI"
+    },
+
+    {
+        nome: "HOMEM ARANHA",
+        categoria: "HEROI"
+    },
+
+    {
+        nome: "HOMEM DE FERRO",
+        categoria: "HEROI"
+    },
+
+    {
+        nome: "LULA",
+        categoria: "HEROI"
+    },
+
+    {
+        nome: "TITANIC",
+        categoria: "FILME"
+    },
+
+    {
+        nome: "SHREK",
+        categoria: "FILME"
+    },
+
+    {
+        nome: "MATRIX",
+        categoria: "FILME"
+    },
+
+    {
+        nome: "AVATAR",
+        categoria: "FILME"
+    },
+
+    {
+        nome: "JURASSIC PARK",
+        categoria: "FILME"
+    },
+
+    {
+        nome: "PIZZA",
+        categoria: "COMIDA"
+    },
+
+    {
+        nome: "HAMBURGUER",
+        categoria: "COMIDA"
+    },
+
+    {
+        nome: "CHURRASCO",
+        categoria: "COMIDA"
+    },
+
+    {
+        nome: "LASANHA",
+        categoria: "COMIDA"
+    },
+
+    {
+        nome: "FEIJOADA",
+        categoria: "COMIDA"
+    },
+
+    {
+        nome: "FUSCA",
+        categoria: "CARRO"
+    },
+
+    {
+        nome: "MUSTANG",
+        categoria: "CARRO"
+    },
+
+    {
+        nome: "KOMBI",
+        categoria: "CARRO"
+    },
+
+    {
+        nome: "FERRARI",
+        categoria: "CARRO"
+    },
+
+    {
+        nome: "UNO",
+        categoria: "CARRO"
+    },
+
+    {
         nome: "FAZ O L",
         categoria: "FRASE MARCANTE"
-    }  
+    }
+
 ];
+
 
 criarPalavraSecreta();
 
